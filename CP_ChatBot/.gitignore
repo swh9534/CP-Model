@@ -1,6 +1,3 @@
-*.docx
-*.zip
-
 # Python 관련 일반적인 설정
 __pycache__/
 *.py[cod]
@@ -50,5 +47,3 @@ logs/
 # 임시 파일
 *.temp
 *.tmp
-
-api_key.txt
