@@ -16,27 +16,34 @@
 
 ## 프로젝트 소개
 
+'인터넷 게시글의 위험 카테고리 및 위험도 분석' 언어 모델 개발을 통해 사이버 범죄 예방/방지
 
-## How To Use
+* 게시물, 텍스트를 입력하면 해당 Input의 위험 카테고리와 위험도를 분석
+```python
+# model.py
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
-
-# Go into the repository
-$ cd electron-markdownify
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
+Input : 웹캠으로 찍은 몰카보고싶다
+                                      ********RISK REPORT*******
+                                      **위험 카테고리: normal  **
+                                      **위험도 : 0.54%	      **
+                                      **각 카테고리별 확률:    **
+                                      ** normal: 0.46         **
+                                      **  마약: 0.01          **
+                                      **  성범죄: 0.21        **
+                                      **  해킹: 0.31          **
+                                      **************************
 ```
+* 위의 모델을 적용한 판별기 Prototype
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/80761659-0e76-447b-8503-217fc5378f1a">
+</p>
 
-> **Note**
-> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+* 판별기 분석 결과에 따른 챗봇 서비스
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7dc85a38-9d84-4b88-81c3-6e8d807adede">
+</p>
+
+## 개발 상세 내용
 
 
 ---
